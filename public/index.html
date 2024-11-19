@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Home Section -->
+    <div class="home">
+      <h1>Welcome to MyApp</h1>
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <!-- Login/Signup Modal -->
+    <div id="loginModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Choose an Option</h2>
+        <button class="login-option" id="googleLogin">
+          <img src="google-icon.png" alt="Google Icon"> Login with Google
+        </button>
+        <button class="login-option" id="o365Login">
+          <img src="o365-icon.png" alt="O365 Icon"> Login with Microsoft
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="client.js"></script>
+</body>
+</html>
