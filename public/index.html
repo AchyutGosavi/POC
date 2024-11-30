@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Interviewer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Home Section -->
-    <div class="home">
-      <h1>Welcome to MyApp</h1>
-      <button id="loginBtn">Login</button>
-      <button id="signupBtn">Sign Up</button>
-    </div>
-
-    <!-- Login/Signup Modal -->
-    <div id="loginModal" class="modal hidden">
-      <div class="modal-content">
-        <span class="close-btn" id="closeModal">&times;</span>
-        <h2>Choose an Option</h2>
-        <button class="login-option" id="googleLogin">
-          <img src="google-icon.png" alt="Google Icon"> Login with Google
-        </button>
-        <button class="login-option" id="o365Login">
-          <img src="o365-icon.png" alt="O365 Icon"> Login with Microsoft
-        </button>
-      </div>
-    </div>
-  </div>
-  <script src="client.js"></script>
+    <header class="header">
+        <div class="header-overlay">
+            <h1> Coming Soon...</h1>
+            <h2>Prepare yourself</h2>
+            <p>Ace Every Interview with Confidence – Your Journey Starts Here</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
+    </header>
+    <main class="main-content">
+        <section id="services" class="section services">
+            <h3>Our Services</h3>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="images/mock-interview.jpg" alt="Mock Interviews">
+                    <h3>Mock Interviews</h3>
+                    <p>Get valuable feedback to refine your skills.</p>
+                </div>
+                <div class="card">
+                    <img src="images/real-interviews.jpg" alt="Real Interviews">
+                    <h3>Real Interviews</h3>
+                    <p>Employers connect with top talent for real opportunities.</p>
+                </div>
+                <div class="card">
+                    <img src="images/resume-review.jpg" alt="Resume Reviews">
+                    <h3>Resume Reviews</h3>
+                    <p>Create standout resumes with expert advice.</p>
+                </div>
+                <div class="card">
+                    <img src="images/skill-assessment.jpg" alt="Skill Assessments">
+                    <h3>Skill Assessments</h3>
+                    <p>Test your knowledge with expert-designed evaluations.</p>
+                </div>
+            </div>
+        </section>
+        <section id="schedule" class="section schedule">
+            <h2>Schedule Your Interview</h2>
+            <p>Select your role to proceed:</p>
+            <div class="role-buttons">
+                <a href="#" class="btn-secondary">I am a Candidate</a>
+                <a href="#" class="btn-secondary">I am an Employer</a>
+            </div>
+        </section>
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 The Interviewer. All rights reserved.</p>
+            <!-- <p>Email us: <a href="mailto:info@mockinterviewhub.com">info@mockinterviewhub.com</a></p> -->
+        </div>
+    </footer>
+    <script src="client.js"></script>
 </body>
 </html>
